@@ -14,3 +14,4 @@ export declare const MessagesContext: Object;
 export declare const useMessages: (
 	warningCallback?: ({ ns, key, message }) => void,
 ) => (ns: string, key: string) => MessageDescriptor;
+export declare const transformBatchToContext: (batch: Object) => Function;
