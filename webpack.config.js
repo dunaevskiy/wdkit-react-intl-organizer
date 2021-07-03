@@ -30,6 +30,7 @@ module.exports = {
 	mode: 'production',
 	externals: {
 		'react': 'react',
+		'react-intl': 'react-intl',
 		'prop-types': 'prop-types',
 		'path': 'path',
 	},
