@@ -1,6 +1,6 @@
 {
   "name": "@wdkit/react-intl-organizer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Intl Organizer helps to split messages/translations declaration into smaller atomic logical groups (namespaces) without unnecessary exports.",
   "keywords": [
     "wdkit",
