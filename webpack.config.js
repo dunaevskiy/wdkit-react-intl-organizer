@@ -32,6 +32,5 @@ module.exports = {
 		'react': 'react',
 		'react-intl': 'react-intl',
 		'prop-types': 'prop-types',
-		'path': 'path',
 	},
 };

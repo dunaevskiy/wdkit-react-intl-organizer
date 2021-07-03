@@ -1,8 +1,7 @@
-import { sep } from 'path';
 import invariant from 'invariant';
 
 export const getMetadataFromFilepath = (filepath) => {
-	const pathParts = filepath.split(sep);
+	const pathParts = filepath.split(filepath[1]);
 	const group = pathParts[1];
 
 	invariant(
