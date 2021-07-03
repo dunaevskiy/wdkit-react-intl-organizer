@@ -16,6 +16,11 @@ React Intl Organizer helps to split messages/translations declaration into small
 yarn add @wdkit/react-intl-organizer
 ```
 
+## Examples
+
+- [React (NextJS)](./examples/nextjs)
+- [React Native (Expo)](./examples/expo)
+
 ## Usage
 
 ### Definition of source
@@ -81,6 +86,8 @@ const optionalCallback = (namespace, key, message) => {
 
 export const { locales, messages, translations, getMessage } = mergeMessages(context, optionalCallback);
 ```
+
+***NOTE: React Native with [Expo](https://expo.io) does not support `require.context`. Instead of it use `babel-plugin-import-glob` with transformation `transformBatchToContext` from this package. For more details, see the Expo example.***
 
 - `locales` - all available locales, e.g. `['en', 'es_ES', 'custom']`
 - `messages` - all messages
