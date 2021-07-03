@@ -1,3 +1,5 @@
+import { MessageDescriptor } from 'react-intl';
+
 export declare const mergeMessages: (
 	context: Object,
 	warningCallback?: ({ ns, key, message }) => void,
@@ -11,4 +13,4 @@ export declare const MessagesProvider: ({ messages, children }) => Object;
 export declare const MessagesContext: Object;
 export declare const useMessages: (
 	warningCallback?: ({ ns, key, message }) => void,
-) => (ns: string, key: string) => Object;
+) => (ns: string, key: string) => MessageDescriptor;
