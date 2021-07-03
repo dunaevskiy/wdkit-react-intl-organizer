@@ -3,7 +3,8 @@
 <h1 align="right">WDKit<br/>react-intl-organizer</h1>
 
 <div align="right">
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" />
+  <img src="https://img.shields.io/github/license/dunaevskiy/wdkit-react-intl-organizer?color=blue&style=flat-square" />
+  <img src="https://img.shields.io/travis/com/dunaevskiy/wdkit-react-intl-organizer?color=green&style=flat-square" />
 </div>
 
 <br/>
@@ -84,7 +85,12 @@ const optionalCallback = (namespace, key, message) => {
    // 'buttons', 'does-not-exist-key', 'An informative human readable message'
 };
 
-export const { locales, messages, translations, getMessage } = mergeMessages(context, optionalCallback);
+export const {
+   locales,
+   messages,
+   translations,
+   getMessage
+} = mergeMessages(context, optionalCallback);
 ```
 
 ***NOTE: React Native with [Expo](https://expo.io) does not support `require.context`. Instead of it use `babel-plugin-import-glob` with transformation `transformBatchToContext` from this package. For more details, see the Expo example.***
