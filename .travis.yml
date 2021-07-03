@@ -1,0 +1,32 @@
+os: linux
+dist: xenial
+language: node_js
+node_js:
+  - 15
+cache: yarn
+
+jobs:
+  include:
+    - stage: test
+      if: type = pull_request
+      install:
+        - yarn
+      script:
+        - yarn lint
+        - yarn test
+
+    - stage: release
+      if: type = push AND branch =~ /^v\d+\.\d+\.\d+/
+      install:
+        - yarn
+      script:
+        - yarn lint
+        - yarn test
+        - yarn build
+      deploy:
+        provider: npm
+        email: '${USER_EMAIL}'
+        api_token: '${USER_TOKEN}'
+        on:
+          tags: true
+        skip_cleanup: true

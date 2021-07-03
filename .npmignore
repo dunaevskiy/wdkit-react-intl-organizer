@@ -1,0 +1,13 @@
+.vscode
+.idea
+/coverage
+/docs
+/examples
+/src
+.babelrc
+.eslintrc.json
+.gitignore
+.prettierrc
+.travis.yml
+webpack.config.js
+*.log

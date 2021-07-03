@@ -1,0 +1,59 @@
+{
+  "name": "@wdkit/react-intl-organizer",
+  "version": "0.0.0",
+  "description": "React Intl Organizer helps to split messages/translations declaration into smaller atomic logical groups (namespaces) without unnecessary exports.",
+  "keywords": [
+    "wdkit",
+    "react",
+    "intl",
+    "organizer"
+  ],
+  "repository": "github:dunaevskiy/wdkit-react-intl-organizer",
+  "license": "MIT",
+  "author": {
+    "name": "Sergey Dunaevskiy",
+    "email": "sergey@dunaevskiy.dev",
+    "url": "https://github.com/dunaevskiy"
+  },
+  "main": "dist/index.js",
+  "types": "./types.d.ts",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint ./src"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "warning": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "esm": "^3.2.25",
+    "jest": "^27.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.7.0",
+    "react": ">=16.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
