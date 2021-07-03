@@ -9,6 +9,7 @@
 	"extends": ["eslint-config-airbnb", "eslint-config-prettier"],
 	"rules": {
 		"import/prefer-default-export": 0,
-		"react/jsx-filename-extension": 0
+		"react/jsx-filename-extension": 0,
+		"no-console": ["error", { "allow": ["warn"] }]
 	}
 }
