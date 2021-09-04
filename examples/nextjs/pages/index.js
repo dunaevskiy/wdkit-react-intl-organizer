@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useMessages } from '@wdkit/react-intl-organizer';
-import { getMessageOutOfReact } from './util';
+import { getMessageOutOfReact } from '../utils/getMessageOutOfReact';
 
 const msg = getMessageOutOfReact();
 
